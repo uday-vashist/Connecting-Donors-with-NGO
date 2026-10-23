@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SevaSetu | Sevadeep</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside>
+<div class="brand"><h1>SevaSetu</h1><p>A bridge between donors, NGOs, volunteers and the Narayan Seva kitchen</p></div>
+<nav id="nav">
+<button data-tab="about" class="on">About Sevadeep</button>
+<button data-tab="donate">Donate an item</button>
+<button data-tab="track">Track a donation</button>
+<button data-tab="meals">Narayan Seva meals</button>
+<button data-tab="expiry">Expiry alerts<span class="cnt" id="expBadge"></span></button>
+<button data-tab="swap">Resource swap<span class="cnt" id="swBadge"></span></button>
+<button data-tab="volunteer">Volunteer</button>
+<button data-tab="register">Register your NGO</button>
+<button data-tab="impact">My impact</button>
+</nav>
+<div class="logo" role="img" aria-label="Sevadeep. Connecting Donors with NGOs">
+<svg viewBox="0 0 300 118" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<path d="M52 6C63 26 69 36 63 47C59 53 45 53 41 47C35 36 43 24 52 6Z" fill="#E8812F"/>
+<path d="M49 30C55 38 56 44 52 48C47 46 45 38 49 30Z" fill="#A92E2E"/>
+<path d="M2 54C26 54 44 60 54 72C46 80 36 84 26 84C14 84 6 70 2 54Z" fill="#A92E2E"/>
+<path d="M104 54C80 54 62 60 52 72C60 82 72 86 82 86C96 86 102 70 104 54Z" fill="#E8812F"/>
+<path d="M30 80C42 74 56 76 64 82C56 90 44 92 34 90Z" fill="#E8812F" opacity=".9"/>
+<text x="116" y="64" font-family="'Bricolage Grotesque',Arial Black,sans-serif" font-weight="800" font-size="40" textLength="176" lengthAdjust="spacingAndGlyphs"><tspan fill="#A92E2E">SEVA</tspan><tspan fill="#E8812F">DEEP</tspan></text>
+<text x="4" y="108" font-family="'Bricolage Grotesque',Arial,sans-serif" font-weight="800" font-size="19" fill="#A92E2E" textLength="292" lengthAdjust="spacingAndGlyphs">Connecting Donors with NGOs</text>
+</svg></div>
+</aside>
+<main>
+
+<section id="about" class="on">
+<div class="hero">
+<div class="heroText">
+<span class="tag">Pune, India</span>
+<h2>Giving that reaches the right hands</h2>
+<p>Sevadeep is a digital platform that connects donors with verified NGOs. People give furniture, clothes, appliances and household goods, and orphanages, old-age homes and other social organisations receive what they actually need.</p>
+<div class="heroBtns"><button class="btn gold" data-go="donate">Donate an item</button><button class="btn ghost light" data-go="meals">Sponsor a meal</button></div>
+</div>
+<svg class="heroArt" viewBox="0 0 110 100" aria-hidden="true"><path d="M52 6C63 26 69 36 63 47C59 53 45 53 41 47C35 36 43 24 52 6Z" fill="#F28C28"/><path d="M49 30C55 38 56 44 52 48C47 46 45 38 49 30Z" fill="#FBF4EE"/><path d="M2 54C26 54 44 60 54 72C46 80 36 84 26 84C14 84 6 70 2 54Z" fill="#FBF4EE" opacity=".9"/><path d="M104 54C80 54 62 60 52 72C60 82 72 86 82 86C96 86 102 70 104 54Z" fill="#F28C28"/></svg>
+</div>
+<div class="stats">
+<div class="stat"><b>250+</b>Narayan Seva meals every day</div>
+<div class="stat"><b>2.5 lakh+</b>Meals served since the COVID lockdown</div>
+<div class="stat"><b>Free</b>Doorstep pickup for donors in Pune</div>
+</div>
+<h3 class="secH">What Sevadeep does</h3>
+<div class="cards">
+<div class="card"><h4>In-kind donations</h4><p>Donors see what NGOs need and give goods in place of money, so help matches real requirements.</p></div>
+<div class="card"><h4>Verified NGOs only</h4><p>Every recipient organisation is screened first, so only genuine social organisations are onboarded.</p></div>
+<div class="card"><h4>Pickup and tracking</h4><p>For donors in Pune, a volunteer collects the item from the door, and the donation is followed until it is received.</p></div>
+<div class="card"><h4>Narayan Seva kitchen</h4><p>A food programme that serves nutritious meals to relatives of patients at Sassoon Hospital, Pune.</p></div>
+</div>
+<h3 class="secH">How it works</h3>
+<div class="cards four">
+<div class="card"><b class="num">1</b><h4>NGOs are verified</h4><p>Organisations are checked before they join.</p></div>
+<div class="card"><b class="num">2</b><h4>You choose a need</h4><p>Pick an item an NGO has asked for.</p></div>
+<div class="card"><b class="num">3</b><h4>Pickup or delivery</h4><p>We coordinate how the item reaches the NGO.</p></div>
+<div class="card"><b class="num">4</b><h4>You see the outcome</h4><p>Updates show where your gift went.</p></div>
+</div>
+<h3 class="secH">Who it helps</h3>
+<div class="panel"><p style="line-height:1.7">Orphanages, old-age homes, learning centres and other community organisations, along with the families of patients who depend on the Narayan Seva kitchen for a daily meal.</p></div>
+<h3 class="secH">How you can contribute</h3>
+<div class="cards">
+<div class="card"><h4>Donate an item</h4><p>Clothes, books, furniture, appliances or utensils you no longer need.</p><button class="btn" data-go="donate">Donate now</button></div>
+<div class="card"><h4>Sponsor meals</h4><p>Pay for meals at the Narayan Seva kitchen through UPI.</p><button class="btn" data-go="meals">Sponsor meals</button></div>
+<div class="card"><h4>Volunteer</h4><p>Offer your time and skills for pickups, teaching, sorting or tech help.</p><button class="btn" data-go="volunteer">Join as volunteer</button></div>
+<div class="card"><h4>Share surplus stock</h4><p>NGOs can list spare supplies and urgent needs to help one another.</p><button class="btn" data-go="swap">Open resource swap</button></div>
+</div>
+<div class="panel" style="margin-top:24px">
+<h3>About the team behind it</h3>
+<p style="line-height:1.7">Sevadeep is an initiative of the Relfor Foundation, the philanthropic arm of Relfor Lab, and is based in Pune, Maharashtra.</p>
+</div>
+</section>
+
+<section id="donate">
+<h2>Donate an item</h2>
+<p class="sub">Add a photo and the app fills in the details, finds the NGO that needs it most, and plans the pickup.</p>
+<div class="grid">
+<div class="panel">
+<h3>Your donation</h3>
+<label class="drop" for="photo">Tap to add a photo of the item<div id="preview"></div></label>
+<input type="file" id="photo" accept="image/*" hidden>
+<p id="detect" class="empty" style="padding:10px 0 0;text-align:left"></p>
+<label for="cat">Category</label>
+<select id="cat"><option>Clothes</option><option>Books</option><option>Furniture</option><option>Appliances</option><option>Utensils</option></select>
+<label for="qty">Quantity</label>
+<input type="number" id="qty" value="1" min="1">
+<label for="cond">Condition</label>
+<select id="cond"><option>Like new</option><option selected>Good</option><option>Usable</option></select>
+<label for="area">Pickup area in Pune</label>
+<select id="area"><option>Kothrud</option><option>Baner</option><option>Hadapsar</option><option>Viman Nagar</option></select>
+<button class="btn" id="submit">Find the best NGO</button>
+</div>
+<div class="panel">
+<h3>Best matches</h3>
+<div id="results"><p class="empty">Submit a donation to see which NGOs need it most.</p></div>
+<div id="plan"></div>
+</div>
+</div>
+</section>
+
+<section id="track">
+<h2>Track a donation</h2>
+<p class="sub">Every donation gets a code. Each step from pickup to receipt is logged so donors can see where it went.</p>
+<div class="panel">
+<div class="row"><input id="code" placeholder="Enter donation code, for example SV-1024" value="SV-1024"><button class="btn" id="lookup">Show journey</button></div>
+<p id="trackMsg" class="empty"></p>
+<div id="trackBox" style="display:none">
+<div style="display:flex;gap:18px;align-items:center;margin-top:18px">
+<div class="qr" id="qr"></div>
+<div><h3 id="tTitle"></h3><p id="tSub" style="color:var(--muted);font-size:14px;margin-top:4px"></p></div>
+</div>
+<ul class="tl" id="tl"></ul>
+<button class="btn gold" id="advance">Move to next step (demo)</button>
+</div>
+</div>
+</section>
+
+<section id="meals">
+<h2>Narayan Seva meals</h2>
+<p class="sub">Daily meals for relatives of patients at Sassoon Hospital. A forecast helps the kitchen prepare the right amount, and donors can sponsor meals.</p>
+<div class="grid">
+<div class="panel">
+<h3>Expected meals this week</h3>
+<div class="chart" id="chart"></div>
+<p style="font-size:13px;color:var(--muted);margin-top:12px">Sample forecast. The real version would learn from past daily counts.</p>
+</div>
+<div class="panel">
+<h3>Sponsor meals</h3>
+<label for="mealQty">Number of meals</label>
+<input type="number" id="mealQty" value="10" min="1">
+<label for="donorName">Your name</label>
+<input id="donorName" placeholder="Name for the receipt">
+<p style="margin-top:14px;font-size:14px">Amount to pay</p>
+<h2 id="amount" style="font-size:36px;margin-top:2px">&#8377;400</h2>
+<button class="btn gold" id="sponsor">Pay with UPI</button>
+<p style="margin-top:18px;font-size:14px">Sponsored through this app today</p>
+<h2 id="sponsored" style="font-size:44px;margin-top:4px">0</h2>
+<div id="mealMsg" style="font-size:14px;color:var(--muted)"></div>
+</div>
+</div>
+</section>
+
+<section id="expiry">
+<h2>Expiry alerts and waste prevention</h2>
+<p class="sub">Track expiry dates for food, medicines and other time-sensitive supplies. Items closest to expiry are listed first so they go out first, and nothing expired is ever distributed.</p>
+<div id="exAlert"></div>
+<div class="stats">
+<div class="stat"><b id="exSoon">0</b>Expiring soon</div>
+<div class="stat"><b id="exExp">0</b>Expired</div>
+<div class="stat"><b id="exSaved">0</b>Units saved from waste</div>
+</div>
+<div class="grid">
+<div class="panel">
+<h3>Add stock</h3>
+<label for="exName">Item name</label>
+<input id="exName" placeholder="For example: Wheat flour">
+<label for="exCat">Type</label>
+<select id="exCat"><option>Food</option><option>Medicines</option><option>Other supplies</option></select>
+<label for="exQty">Quantity</label>
+<input type="number" id="exQty" value="1" min="1">
+<label for="exDate">Expiry date (leave empty if none)</label>
+<input type="date" id="exDate">
+<label for="exWin">Alert me this many days before expiry</label>
+<input type="number" id="exWin" value="7" min="1">
+<p id="exMsg" style="font-size:14px;color:var(--brick);margin-top:10px"></p>
+<button class="btn" id="exAdd">Add to inventory</button>
+</div>
+<div class="panel">
+<h3>Inventory by expiry</h3>
+<div id="exList"></div>
+</div>
+</div>
+</section>
+
+<section id="impact">
+<h2>My impact</h2>
+<p class="sub">Donors see what their giving achieved and stay motivated to give again.</p>
+<div class="stats">
+<div class="stat"><b id="sItems">0</b>Items donated</div>
+<div class="stat"><b id="sMeals">0</b>Meals sponsored</div>
+<div class="stat"><b id="sPeople">0</b>People helped</div>
+</div>
+<div class="grid">
+<div class="panel"><h3>Badges</h3><div class="badges" id="badges"></div></div>
+<div class="panel"><h3>Pune leaderboard</h3><table class="lb" id="lb"></table></div>
+</div>
+</section>
+
+<section id="swap">
+<h2>NGO emergency resource swap</h2>
+<p class="sub">One NGO has spare stock, another needs it urgently, a third has a vehicle. The app connects them, plans the transfer with costs, records approvals and updates every inventory together.</p>
+<div class="grid">
+<div class="stack">
+<div class="panel"><h3>Urgent requests</h3><div id="swReqs"></div></div>
+<div class="panel">
+<h3>Post an urgent request</h3>
+<label for="swNgo">NGO</label><select id="swNgo"></select>
+<label for="swItem">Item</label><select id="swItem"><option>Blankets</option><option>Rice (kg)</option><option>Books</option><option>Utensils</option></select>
+<label for="swQty">Quantity needed</label><input type="number" id="swQty" value="10" min="1">
+<label for="swUrg">Urgency (1 to 10)</label><input type="number" id="swUrg" value="8" min="1" max="10">
+<p id="swMsg" style="font-size:14px;color:var(--brick);margin-top:10px"></p>
+<button class="btn gold" id="swPost">Post request</button>
+</div>
+</div>
+<div class="panel"><h3>Transfer plan</h3><div id="swPlan"><p class="empty">Pick a request and tap Find transfer plan.</p></div></div>
+</div>
+<div class="grid" style="margin-top:24px">
+<div class="panel"><h3>Shared inventory</h3><table class="lb" id="swInv"></table></div>
+<div class="panel"><h3>Available vehicles</h3><table class="lb" id="swVeh"></table><button class="btn ghost" id="swFree">Vehicles return (demo)</button></div>
+</div>
+<div class="panel" style="margin-top:24px"><h3>Approved transfers</h3><div id="swLog"></div></div>
+</section>
+
+<section id="volunteer">
+<h2>Volunteer</h2>
+<p class="sub">Tell us your skills and availability. Drives show how well they fit you, and NGOs can see which skills are available beyond attendance hours.</p>
+<div class="grid">
+<div class="stack">
+<div class="panel">
+<h3>Join as a volunteer</h3>
+<div id="vForm">
+<label for="vName">Full name</label>
+<input id="vName" placeholder="Your name">
+<label for="vArea">Area in Pune</label>
+<select id="vArea"><option>Kothrud</option><option>Baner</option><option>Hadapsar</option><option>Viman Nagar</option></select>
+<label>Your skills (pick all that apply)</label>
+<div class="chips" id="vSkills"></div>
+<label for="vAvail">When are you available?</label>
+<select id="vAvail"><option>Anytime</option><option>Weekdays</option><option>Weekends</option></select>
+<label for="vAccess">Accessibility needs</label>
+<select id="vAccess"><option>None</option><option>No heavy lifting</option><option>Seated work only</option></select>
+<button class="btn" id="vJoin">Join as volunteer</button>
+</div>
+<div id="vProfile" style="display:none;font-size:15px;line-height:1.7"></div>
+</div>
+<div class="panel">
+<h3>Post a drive (for NGOs)</h3>
+<label for="dNgo">NGO</label>
+<select id="dNgo"></select>
+<label for="dTitle">Drive title</label>
+<input id="dTitle" placeholder="For example: Winter clothes sorting">
+<label for="dSkill">Skill needed</label>
+<select id="dSkill"></select>
+<label class="chip" style="margin-top:12px"><input type="checkbox" id="dHeavy"> Involves heavy lifting</label>
+<label for="dDate">Date</label>
+<input type="date" id="dDate">
+<label for="dNeed">Volunteers needed</label>
+<input type="number" id="dNeed" value="5" min="1">
+<label for="dHours">Hours</label>
+<input type="number" id="dHours" value="3" min="1">
+<button class="btn gold" id="dPost">Post drive</button>
+</div>
+</div>
+<div class="panel">
+<h3>Upcoming drives</h3>
+<p id="vMsg" style="font-size:14px;color:var(--brick);margin-bottom:10px"></p>
+<div id="drives"></div>
+</div>
+</div>
+<div class="panel" style="margin-top:24px">
+<h3>Skills NGOs can discover</h3>
+<table class="lb" id="pool"></table>
+<p style="font-size:13px;color:var(--muted);margin-top:12px">Verified skills count for more in matching. Workload is balanced by favouring volunteers with fewer hours this month.</p>
+</div>
+<div class="panel" style="margin-top:24px">
+<h3>My attendance</h3>
+<div class="stats">
+<div class="stat"><b id="aDone">0</b>Drives attended</div>
+<div class="stat"><b id="aHours">0</b>Hours volunteered</div>
+<div class="stat"><b id="aRate">0%</b>Attendance rate</div>
+</div>
+<table class="lb" id="att"></table>
+<p style="font-size:13px;color:var(--muted);margin-top:12px">Attendance can be marked on the day of the drive. In the real version the NGO coordinator would confirm it, for example by scanning a QR.</p>
+</div>
+</section>
+<section id="register">
+<h2>Register your NGO</h2>
+<p class="sub">Join Sevadeep as a recipient organisation. Submit your details, our team verifies them, and once approved you appear in donor matching, volunteer drives and the resource swap.</p>
+<div class="grid">
+<div class="panel">
+<h3>Organisation details</h3>
+<label for="rName">NGO name</label>
+<input id="rName" placeholder="Registered name of the organisation">
+<label for="rType">Type</label>
+<select id="rType"><option>Orphanage</option><option>Old-age home</option><option>Learning centre</option><option>Community organisation</option><option>Other</option></select>
+<label for="rReg">Registration number (Society, Trust or Section 8)</label>
+<input id="rReg" placeholder="For example: MH/1234/2015">
+<label for="rContact">Contact person</label>
+<input id="rContact" placeholder="Full name">
+<label for="rPhone">Phone (10 digits)</label>
+<input id="rPhone" inputmode="numeric" maxlength="10" placeholder="9876543210">
+<label for="rEmail">Email</label>
+<input id="rEmail" type="email" placeholder="name@ngo.org">
+<label for="rArea">Area in Pune</label>
+<select id="rArea"><option>Kothrud</option><option>Baner</option><option>Hadapsar</option><option>Viman Nagar</option></select>
+<label>What does your NGO need? (pick all that apply)</label>
+<div class="chips" id="rNeeds"></div>
+<label for="rDoc">Registration certificate (photo or PDF)</label>
+<input type="file" id="rDoc" accept="image/*,application/pdf">
+<label class="chip" style="margin-top:14px"><input type="checkbox" id="rConsent"> I confirm these details are correct and agree to verification</label>
+<p id="rMsg" style="font-size:14px;color:var(--brick);margin-top:10px"></p>
+<button class="btn" id="rSubmit">Submit application</button>
+</div>
+<div class="panel">
+<h3>Application status</h3>
+<div id="rApps"><p class="empty">No applications yet. Submit the form to start verification.</p></div>
+</div>
+</div>
+</section>
+
+</main>
+<div class="modal" id="modal">
+<div class="sheet">
+<h3>Pay with UPI</h3>
+<p id="payInfo" style="font-size:14px;margin-top:6px"></p>
+<div id="payQr"></div>
+<a class="btn" id="upiLink" href="#">Open UPI app</a>
+<p style="font-size:12px;color:var(--muted);margin-top:10px">Scan the QR with any UPI app, or tap the button on your phone.</p>
+<button class="btn gold" id="paid">I have paid</button>
+<button class="btn ghost" id="cancelPay">Cancel</button>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
